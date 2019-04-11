@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cc8848.github.io/xxx/my-first-blog/</loc>
-    <lastmod>2019-04-11T18:29:02+08:00</lastmod>
+    <loc>https://cc8848.github.io/post/test/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cc8848.github.io/post/post-title/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cc8848.github.io/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,19 +24,26 @@
   </url>
   
   <url>
-    <loc>https://cc8848.github.io/</loc>
-    <lastmod>2019-04-11T18:29:02+08:00</lastmod>
+    <loc>https://cc8848.github.io/post/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cc8848.github.io/tags/tag1/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cc8848.github.io/tags/tag2/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cc8848.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cc8848.github.io/xxx/</loc>
-    <lastmod>2019-04-11T18:29:02+08:00</lastmod>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   

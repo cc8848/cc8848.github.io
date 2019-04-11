@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on 37º空间-个人博客</title>
+    <link>https://cc8848.github.io/tags/tag2/</link>
+    <description>Recent content in Tag2 on 37º空间-个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2019</copyright>
+    <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://cc8848.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post title</title>
+      <link>https://cc8848.github.io/post/post-title/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>https://cc8848.github.io/post/post-title/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>37º空间-个人博客</title>
-    <link>https://cc8848.github.io/</link>
-    <description>Recent content on 37º空间-个人博客</description>
+    <title>Posts on 37º空间-个人博客</title>
+    <link>https://cc8848.github.io/post/</link>
+    <description>Recent content in Posts on 37º空间-个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cc8848.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cc8848.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
