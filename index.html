@@ -1,180 +1,96 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  	<meta property="og:title" content=" 37º空间-个人博客" />
-  	<meta property="og:site_name" content="37º空间-个人博客" />
-  	<meta property="og:url" content="https://cc8848.github.io/" />
-    
-    
-    <meta property="og:type" content="website" />
-    
-
-  <title>
-     37º空间-个人博客
-  </title>
-
-    <meta name="description" content="this is my description" />
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="https://cc8848.github.io/images/favicon.ico">
-	  <link rel="apple-touch-icon" href="https://cc8848.github.io/images/apple-touch-icon.png" />
-    
-    <link rel="stylesheet" type="text/css" href="https://cc8848.github.io/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
-
-
-    
-      
-      
-        <link href="https://cc8848.github.io/index.xml" rel="alternate" type="application/rss+xml" title="37º空间-个人博客" />
-      
-    
-    <meta name="generator" content="Hugo 0.49" />
-
-    <link rel="canonical" href="https://cc8848.github.io/" />
-
-    
-<div id="particles-js"></div>
-<script src="https://cc8848.github.io/js/particles.min.js"></script>
-<script src="https://cc8848.github.io/js/particles.js"></script>   
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="ZJ|SKY。不忘初心，方得始终！" />
+	<meta name="keywords" content="11sky,ZJ博客,动漫" />
+	<title>SKY-不忘初心，方得始终</title>
+	<meta name="Author" content="ymuyi.com">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" media="screen" />
+	<link href="css/style.css" rel="stylesheet" />
+		<link rel="icon" href="icon.icon">
+	<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+	<script src="js/snow.js"></script>
+	<!-- 调用snow函数 -->
+	<script>
+		$(function(){
+			$('body').snow({
+				fadecolor: '#fff', //雪花颜色
+				minSize: 10, //雪花最小尺寸
+				maxSize: 40,// 雪花最大尺寸
+				rate: 200//雪花出现频率，毫秒，值越小雪花出现越快
+			});
+		});
+	</script>
+	<script src="js/rain.js"></script>
+		<script>
+			Rain({ 
+				speed: [10,1000], // 风速范围
+				hasBounce: true, // 是否有回弹效果
+				wind_direction: 230, // 风向
+				gravity: 0.163, // 重力
+				maxNum: 1000, // 雨滴最大数量
+				numLevel: 10, // 每次生成雨滴数量
+				drop_chance: 0.4 // 下雨的概率
+			});
+		</script>
 </head>
-<body class="nav-closed">
+<body>
+<div id="container">
+<canvas id="canvas" width="1920" height="1080"></canvas>
+<script src="js/weatherDrop.js"></script>
+<script>
+	new Weather({
+		id:'canvas',
+		weatherType:'snow',
+		num:100
+	});
+</script>
+<script src="js/weatherDrop.js"></script>
+<script>
+	new Weather({
+		id:'canvas',
+		weatherType:'rain',
+		num:100
+	});
+</script>
+    <script src="js/main.js"></script>
+    <script>
+        init({
+        	id:'canvas',
+        	maxNum:100,
+            //type: "rain",  // drop类型，有rain or snow
+            speed : [10,20], //速度范围
+            size_range: [2,5],//大小半径范围
+            hasBounce: true, //是否有反弹效果or false,
+            wind_direction: 105, //角度
+            hasGravity: true //是否有重力考虑
+        });
+    </script>
+<script src="js/weatherDrop.js"></script>
+<script>
+	new Weather({
+		id:'canvas',
+		weatherType:'cloud',
+		num:3
+	});
+</script>
+    <div id="header">
+	<h1>Welcome<p>SKY_ZJ</p><p>不忘初心，方得始终</p></h1>
+    <a href="love.html" target="_blank">关于|Love</a>
+    <a href="./blog/index.html" target="_blank">&nbsp;&nbsp;博客|Blog&nbsp;&nbsp;</a>
+	<a href="http://" target="_blank">关于|About</a>
+	<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=391779508&amp;site=qq&amp;menu=yes" target="_blank">联系我|Contact me</a>
 
-  
-
-
- <div class="site-wrapper">
-
-
-
-<header class="main-header " style="background-image: url(https://cc8848.github.io/images/user.jpg)">
-
-
-    
-
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="https://cc8848.github.io/"><img src="https://cc8848.github.io/images/user.png" alt="Blog Logo" /></a>
-        
-        
-    </nav>
-<div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">
-              <a class="btn-bootstrap-2 title-scroll" href="#content">37º空间-个人博客</a>
-          </h1>
-          <h2 class="page-description">不忘初心，方得始终</h2>
-        </div>
+  </div>
+  <video id="bgvideo" autoplay="true" width="100%" name="media" poster="images/background.jpg"><!--将这里的预览图更换为你自己的-->
+	<source src="media/girl.mp4" type="video/mp4"><!--将这里的视频地址更换为你自己的-->
+	<source src="media/girl.ogv" type="video/ogg">
+	<source src="media/girl.webm" type="video/webm">
+    您的浏览器不支持 video 标签。请使用更先进的浏览器,如<a href="http://www.google.cn/chrome/browser/" target="_blank">Chrome浏览器</a>或<a href="http://www.firefox.com.cn/download/" target="_blank">Firefox浏览器</a>
+    </video>
 </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
-</header>
-
-<main id="content" class="content" role="main">
-
-    
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-    </div>
-
-    
-        
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://cc8848.github.io/post/test/">test post</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-          <section class="post-content">
-            <pre><code class="language-bash">echo &quot;hello world !!&quot;
-</code></pre>
-
-          </section>
-      </p>
-      
-    </section>
-    <footer class="post-meta">
-        
-            <img class="author-thumb" src="https://cc8848.github.io/images/user.png" alt="Author image" nopin="nopin" />
-        
-        
-        
-            
-        
-        
-        <time class="post-date" datetime="2016-01-01T00:00:00Z">
-            1 Jan 2016
-        </time>
-    </footer>
-</article>
-
-    
-        
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://cc8848.github.io/post/post-title/">Post title</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-          <section class="post-content">
-            
-          </section>
-      </p>
-      
-    </section>
-    <footer class="post-meta">
-        
-            <img class="author-thumb" src="https://cc8848.github.io/images/user.png" alt="Author image" nopin="nopin" />
-        
-        
-            zj
-        
-        on
-            
-                <a href="https://cc8848.github.io/tags/tag1/">#tag1</a>,
-            
-                <a href="https://cc8848.github.io/tags/tag2/">#tag2</a>,
-            
-        
-        <time class="post-date" datetime="2014-07-11T10:54:24&#43;02:00">
-            11 Jul 2014
-        </time>
-    </footer>
-</article>
-
-    
-
-    <nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
-
-</main>
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">37º空间-个人博客</a> All rights reserved - 2019</section>
-        
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
-        
-    </footer>
-    </div>
-    <script type="text/javascript" src="https://cc8848.github.io/js/jquery.js"></script>
-    <script type="text/javascript" src="https://cc8848.github.io/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://cc8848.github.io/js/index.js"></script>
-
 </body>
 </html>
-
